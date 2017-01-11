@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Form Gen</title>
+<link rel="stylesheet" href="assets/css/style-general.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700&amp;subset=latin-ext" rel="stylesheet">
+</head>
+
+<body>
+<header>
+	<div class="container">
+		<a href="#" class="animated zoomInDown logo"><img src="assets/img/formbuilder.svg" width="140px" height="35px"/></a>
+		<a onclick="openNav()" class="menu"><img class="menu-btn" src="assets/img/menu.svg" width="24px" height="24px"/></a>
+
+	</div>
+</header>
+	<section id="form-preview">
+		<div class="title">
+			<h2>Form Preview</h2>
+			<h3>See how awesome is your form !</h3>
+		</div>
+		<div class="container">
+			<div class="empty">
+				<img src="assets/img/preview.svg" width="160px" height="160px"/>
+				<h4>There no items in your builder, Go Go Go !</h4>
+			</div>
+		</div>
+	</section>
+	<section id="form-builder">
+		<div class="title">
+			<h2>Builder</h2>
+			<h3>This is where the magic happens</h3>
+		</div>
+		<div class="container">
+			<div class="empty">
+				<img src="assets/img/factory.svg" width="160px" height="160px"/>
+				<h4>Drag items from Elements panel to start building your Form</h4>
+			</div>
+		</div>
+	</section>
+	<section id="form-elements">
+		<div class="elements-header">
+			<a href="javascript:void(0)" class="menu" onclick="closeNav()"><img class="close-btn" src="assets/img/menu.svg" width="24px" height="24px"/></a>
+		</div>
+		<div class="title">
+			<h2>Elements</h2>
+			<h3>Choose elements to create your awesome form ;)</h3>
+		</div>
+		<div class="container">
+		</div>
+	</section>
+	
+<script>
+function openNav() {
+    document.getElementById("form-elements").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("form-elements").style.width = "0";
+}
+</script>
+</body>
+</html>
